@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="416.0" prefWidth="724.0" style="-fx-background-color: #EEEBDD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LocationController">
+   <children>
+      <Label layoutX="14.0" layoutY="12.0" text="Logement" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="12.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_searchIdLogement" layoutX="130.0" layoutY="11.0" prefHeight="25.0" prefWidth="161.0" promptText="identifiant" AnchorPane.topAnchor="11.0" />
+      <TextField fx:id="txt_adr" layoutX="103.0" layoutY="51.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="51.0" />
+      <Button layoutX="296.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#searchLogement" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #810000;" text="search" textFill="WHITE" AnchorPane.topAnchor="9.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="768.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#addLocation" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #810000;" text="Ajouter" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txt_loyer" layoutX="103.0" layoutY="91.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="91.0" />
+      <TextField fx:id="txt_reg" layoutX="103.0" layoutY="171.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="171.0" />
+      <ImageView fx:id="img_logement" fitHeight="305.0" fitWidth="338.0" layoutX="461.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="txt_type" layoutX="103.0" layoutY="131.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="131.0" />
+      <Label layoutX="16.0" layoutY="51.0" text="Adresse" AnchorPane.leftAnchor="16.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="91.0" text="Loyer" AnchorPane.leftAnchor="16.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="131.0" text="Type" AnchorPane.leftAnchor="16.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="171.0" text="Region" AnchorPane.leftAnchor="16.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="216.0" text="Locataire" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_searchIdLocataire" layoutX="130.0" layoutY="219.0" prefHeight="25.0" prefWidth="161.0" promptText="identifiant" />
+      <TextField fx:id="txt_nom" layoutX="103.0" layoutY="260.0" prefHeight="26.0" prefWidth="203.0" />
+      <Button layoutX="296.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#searchLocataire" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #810000;" text="search" textFill="WHITE" />
+      <TextField fx:id="txt_tel" layoutX="103.0" layoutY="300.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" />
+      <TextField fx:id="txt_cin" layoutX="103.0" layoutY="340.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="425.0" />
+      <Label layoutX="14.0" layoutY="263.0" text="Nom" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="303.0" text="Tel" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="343.0" text="CIN" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateDebut" layoutX="377.0" layoutY="332.0" onAction="#period" prefHeight="26.0" prefWidth="161.0" promptText="Date debut" />
+      <DatePicker fx:id="dateFin" layoutX="557.0" layoutY="331.0" onAction="#period" prefHeight="26.0" prefWidth="147.0" promptText="Date fin" />
+   </children>
+</AnchorPane>

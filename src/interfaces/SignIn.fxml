@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBox" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignInController">
+   <children>
+      <Label text="Se connecter" textFill="#c32424">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txt_userName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Nom de l'utilisateur" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="221.0" prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txt_password" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de passe" HBox.hgrow="ALWAYS" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btn_passwordForgoten" mnemonicParsing="false" onAction="#sendPassword" prefHeight="25.0" prefWidth="138.0" styleClass="motdepass" stylesheets="@../application/application.css" text="Mot de passe oublie?">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_seconnecter" mnemonicParsing="false" onAction="#openHome" prefHeight="25.0" prefWidth="106.0" styleClass="loginbtn" stylesheets="@../application/application.css" text="Se connecter" textFill="WHITE" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

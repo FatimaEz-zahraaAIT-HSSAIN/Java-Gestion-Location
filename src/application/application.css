@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.parent{
+	-fx-background-color: #609EA2;
+}
+.pane{
+	-fx-background-color: transparent;
+}
+
+.vbox-bg{
+	-fx-background-image: url("../images/bck.jpg");
+	-fx-background-size: 356 410;
+	-fx-background-position: center center ;
+	-fx-background-color: white;
+}
+
+.loginbtn{
+	-fx-background-color:#c32424;
+	-fx-text-fill: white;
+}
+.motdepass{
+	-fx-background-color: transparent;
+	-fx-border-color: none;
+}
